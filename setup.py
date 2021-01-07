@@ -13,4 +13,10 @@ setup(
     package_data={
         "scripture_burrito": ["schema"]
     },
+    install_requires=["jsonschema"],
+    entry_points={
+        "console_scripts": [
+            "validate-sb = scripture_burrito.validate:main",
+        ],
+    },
 )

@@ -10,7 +10,7 @@ if int(jsonschema.__version__.split('.', 1)[0]) < 3:
 
 
 schema_uri_prefix = 'https://burrito.bible/schema/'
-schema_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'schema')
+schema_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'schema')
 schema = json.load(open(os.path.join(schema_dir, 'metadata.schema.json')))
 
 
@@ -36,7 +36,7 @@ def validate(input):
     jsonschema.validate(data, schema, resolver=resolver)
 
 
-if __name__ == '__main__':
+def main():
     files = sys.argv[1:]
     inputs = []
     for file in files:
