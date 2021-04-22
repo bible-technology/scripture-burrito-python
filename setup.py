@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="scripture-burrito",
-    version="0.0.1",
+    version="0.0.2",
     description="Python library for the Scripture Burrito data interchange format",
     url="http://github.com/bible-technology/scripture-burrito-python",
     author="BT Tech Consortium",
